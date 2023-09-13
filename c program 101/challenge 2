@@ -1,0 +1,35 @@
+#include <stdio.h> 
+
+int main() 
+    // Déclare les variables pour stocker la température en Fahrenheit et en Celsius
+    float f; 
+    float c; 
+    // Demande à l'utilisateur de saisir la température en Fahrenheit
+    printf("Entrez la température en Fahrenheit : "); 
+    scanf("%f", &f); 
+
+    // Calcule la température en Celsius à partir de la formule C = (F-32)/1.8
+    c = (f - 32) / 1.8; 
+
+    // Affiche la température en Celsius à l'écran
+    printf("La température en Celsius est : %.2f\n", c);
+
+    // Affiche la sensation ressentie en fonction de la température en Celsius
+    if (c < 0)
+    {
+        printf("Il fait très froid !\n"); 
+    else if (c >= 0 && c < 15)
+        printf("Il fait froid !\n"); 
+    }
+    else if (c >= 15 && c < 25) 
+        printf("Il fait bon !\n"); 
+    }
+    else if (c >= 25 && c < 35) 
+        printf("Il fait chaud !\n"); 
+    }
+    else 
+        printf("Il fait très chaud !\n"); 
+    }
+
+    return 0; 
+}
